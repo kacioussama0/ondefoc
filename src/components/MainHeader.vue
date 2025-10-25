@@ -1,0 +1,83 @@
+<script>
+import router from '@/router/index.js'
+
+export default  {
+  name: 'MainHeader',
+
+  data() {
+    return {
+        listItem: [
+          { name: 'Accueil', link: '/' },
+          { name: 'À Propos', link: '/about' },
+          { name: 'Blog', link: '/blog' ,},
+          { name: 'Nos Services', link: '#'},
+          { name: 'Contact', link: '#' }
+        ]
+    }
+  },
+  computed:  {
+      currentLink() {
+        return this.$route.path
+
+    }
+  }
+}
+</script>
+
+<template>
+  <!-- Header Main Start -->
+  <div class="header-main">
+    <div class="container">
+
+      <!-- Header Main Start -->
+      <div class="header-main-wrapper">
+
+        <!-- Header Logo Start -->
+        <div class="header-logo">
+          <a href="index.html"><img src="https://ondefoc.dz/wp-content/uploads/2023/10/LOGO-ONDEFOC-1-1.png.webp" width="160" alt="Logo"></a>
+        </div>
+        <!-- Header Logo End -->
+
+        <!-- Header Menu Start -->
+        <div class="header-menu d-none d-lg-block">
+          <ul class="nav-menu">
+
+            <li v-for="item in listItem" :class="currentLink == item.link ? 'active' : ''"><router-link :to="item.link" >{{ item.name }}</router-link></li>
+
+          </ul>
+
+        </div>
+        <!-- Header Menu End -->
+
+        <!-- Header Sing In & Up Start -->
+        <div class="header-sign-in-up d-none d-lg-block">
+          <ul>
+
+            <li><a class="sign-up" href="#">
+                Arabe
+            </a></li>
+          </ul>
+        </div>
+        <!-- Header Sing In & Up End -->
+
+        <!-- Header Mobile Toggle Start -->
+        <div class="header-toggle d-lg-none">
+          <a class="menu-toggle" href="javascript:void(0)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <!-- Header Mobile Toggle End -->
+
+      </div>
+      <!-- Header Main End -->
+
+    </div>
+  </div>
+  <!-- Header Main End -->
+</template>
+
+<style scoped>
+
+</style>
