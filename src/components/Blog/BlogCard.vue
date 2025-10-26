@@ -66,7 +66,7 @@ export default {
         <span v-if="likes"> <i class="icofont-heart"></i> {{likes}} </span>
       </div>
 
-      <router-link :to="url" class="btn btn-secondary btn-hover-primary">Lire la suite</router-link>
+      <router-link :to="url" class="btn btn-secondary btn-hover-primary">{{$t("common.read_more")}}</router-link>
     </div>
   </article>
   <!-- Single Blog End -->

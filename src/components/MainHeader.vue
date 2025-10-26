@@ -1,5 +1,6 @@
 <script>
 import router from '@/router/index.js'
+import i18n from "@/i18n.js";
 
 export default  {
   name: 'MainHeader',
@@ -7,20 +8,28 @@ export default  {
   data() {
     return {
         listItem: [
-          { name: 'Accueil', link: '/' },
-          { name: 'À Propos', link: '/about' },
-          { name: 'Blog', link: '/blog' ,},
-          { name: 'Nos Services', link: '#'},
-          { name: 'Contact', link: '#' }
+          { name: "navbar.home", link: '/' },
+          { name: "navbar.about", link: '/about' },
+          { name: "navbar.blog", link: '/blog' ,},
+          { name: "navbar.services", link: '#'},
+          { name: "navbar.contact", link: '/contact' }
         ]
     }
   },
   computed:  {
       currentLink() {
         return this.$route.path
+    }
+  },
+
+  methods: {
+    changeLocale(locale) {
+
+      this.$i18n.locale = locale
 
     }
   }
+
 }
 </script>
 
@@ -42,7 +51,7 @@ export default  {
         <div class="header-menu d-none d-lg-block">
           <ul class="nav-menu">
 
-            <li v-for="item in listItem" :class="currentLink == item.link ? 'active' : ''"><router-link :to="item.link" >{{ item.name }}</router-link></li>
+            <li v-for="item in listItem" :class="currentLink == item.link ? 'active' : ''"><router-link :to="item.link" >{{ $t(item.name) }}</router-link></li>
 
           </ul>
 
@@ -53,9 +62,16 @@ export default  {
         <div class="header-sign-in-up d-none d-lg-block">
           <ul>
 
-            <li><a class="sign-up" href="#">
+            <li>
+              <a class="sign-up" @click="changeLocale('ar')" href="#"  v-if="this.$i18n.locale == 'fr'">
                 Arabe
-            </a></li>
+              </a>
+
+              <a class="sign-up" @click="changeLocale('fr')" href="#" v-else>
+                Français
+              </a>
+
+            </li>
           </ul>
         </div>
         <!-- Header Sing In & Up End -->

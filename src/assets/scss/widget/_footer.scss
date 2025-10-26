@@ -34,7 +34,7 @@
 
 // Footer Widget Title
 .footer-widget-title{
-    color: $dark;
+    color: $light;
     font-weight: 500;
     font-size: 22px;
     margin-bottom: 0px;
@@ -64,14 +64,14 @@
         & li{
             & p{
                 font-size: 15px;
-                color: $dark;
+                color: $light;
                 display: flex;
                 align-items: flex-start;
                 margin-bottom: 0;
 
                 & i{
                     font-size: 20px;
-                    color: $primary;
+                    color: $light;
                 }
                 & a{
                     margin-top: 3px;
@@ -94,7 +94,7 @@
 
             & a{
                 font-size: 20px;
-                color: $dark;
+                color: $light;
 
                 &:hover{
                     color: $primary;
@@ -110,7 +110,7 @@
             margin-top: 12px;
 
             & a{
-                color: $dark;
+                color: $light;
                 transition: $transition-base;
                 font-size: 15px;
                 font-weight: 400;
@@ -126,7 +126,7 @@
         padding-top: 36px;
 
         & p{
-            color: $dark;
+            color: $light;
             font-size: 15px;
         }
         & .widget-form{
@@ -137,14 +137,14 @@
                 border: 1px solid rgba($primary, 0.2);
                 border-radius: 10px;
                 background-color: $white;
-                color: $dark;
+                color: $light;
                 font-size: 15px;
                 font-weight: 500;
                 outline: none;
 
                 @include placeholder{
                     opacity: 1;
-                    color: $dark;
+                    color: $light;
                 }
             }
             & .btn{

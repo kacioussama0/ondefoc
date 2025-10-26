@@ -25,24 +25,10 @@ export default {
   },
   methods: {
 
-    async fetchThumbnail(mediaId) {
-      try {
-
-        const response = await axios.get(`https://ondefoc.dz/wp-json/wp/v2/media/${mediaId}`);
-        const data = await response.data;
-
-        return data['media_details']['sizes']['medium']['source_url'];
-
-      } catch (error) {
-        console.error('Error fetching thumbnail:', error);
-        return null;
-      }
-    },
-
     async fetchArticles() {
       try {
 
-        const response = await axios.get('https://ondefoc.dz/wp-json/wp/v2/posts');
+        const response = await axios.get('https://ondefoc.dz/wp-json/wp/v2/posts?_embed');
         const data = await response.data;
 
         return  data.map(async article => {
@@ -54,7 +40,7 @@ export default {
               month: 'long',
               day: 'numeric'
             }),
-            image: article['featured_media'] ? await this.fetchThumbnail(article['featured_media']) : null
+            image: article['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']['medium']['source_url']
           }
         });
 

@@ -1,5 +1,33 @@
 {
-  "Republic": "RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE",
-  "Ministry" : "MINISTERE DE LA FORMATION ET DE L'ENSEIGNEMENT PROFESSIONNELS",
-  "Office": "OFFICE NATIONAL DE DÉVELOPPEMENT ET DE PROMOTION DE LA FORMATION CONTINUE"
+  "common": {
+    "read_more": "Lire la suite"
+  },
+  "topbar": {
+    "republic": "RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE",
+    "ministry" : "MINISTERE DE LA FORMATION ET DE L'ENSEIGNEMENT PROFESSIONNELS",
+    "office": "OFFICE NATIONAL DE DÉVELOPPEMENT ET DE PROMOTION DE LA FORMATION CONTINUE"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "blog": "Actualités",
+    "services": "Services",
+    "contact": "Contactez Nous"
+  },
+  "slider": {
+    "main_title": "Organisme d’appui à la formation continue.",
+    "description": "un établissement public à caractère industriel et commercial (EPIC) qui relève du Ministère de la Formation et de l’Enseignement Professionnels.",
+    "btn": "Télécharger Catalogue"
+  },
+  "about": {
+    "banner_title": "Qui Sommes Nous.",
+    "about_content": {
+      "sub_title": "MOT DU DIRECTEUR GENERAL",
+      "main_title": "DJOUDI SLIMANE",
+      "description": "<p>L’ONDEFOC, est un établissement qui relève du secteur de la formation et de l’enseignement professionnels, reconnu pour la qualité de service qu’il rend à ses différents partenaires. Ses principaux atouts sont dans la qualité de ses prestations, l’étendue de son offre de formation et la densité des partenariats qu’il a tissés avec les différents acteurs économiques.</p>\n              <p>Grâce à son équipe pluridisciplinaire, l’ONDEFOC entend continuer à promouvoir une politique de formation fondée sur l’excellence, l’ouverture et l’accessibilité de ses formations à tous les travailleurs, où qu’ils se trouvent.</p>\n              <p>Ses programmes de formation répondent aux exigences de la transformation et de l’évolution des métiers et des compétences. En outre, ils sont adaptés pour mieux accompagner les entreprises dans leur stratégie de développement de leurs ressources humaines.</p>\n <p>L’office est aussi un espace d’échanges et de rencontres à travers les manifestations qui y sont organisées régulièrement (conférences, expositions, séminaires, journées d’études …).</p>\n<p>Dans un contexte budgétaire contraignant, le défi des prochaines années sera de gérer l’établissement avec efficacité et efficience tout en assurant à nos partenaires qui comptent sur nous le maintien de la qualité de ses services et de ses formations.</p>\n<p>A travers ce site, je tiens ici à remercier chaleureusement toutes les équipes administratives, tous les enseignants consultants et les professionnels qui ne cessent de prendre à cœur la réussite des projets de l’office.</p>"
+    }
+  },
+  "footer": {
+    "description": "L’ONDEFOC est un établissement public à caractère industriel et commercial (EPIC) qui relève du Ministère de la Formation et de l’Enseignement Professionnels. En tant qu’organisme d’appui à la formation continue, il joue un rôle de précurseur dans ce domaine."
+  }
 }

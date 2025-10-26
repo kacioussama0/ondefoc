@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vueuse/head": "^2.0.0",
     "axios": "^1.12.2",
     "easy-typer-js": "^2.1.0",
     "sass-loader": "^16.0.6",

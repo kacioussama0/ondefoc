@@ -1,14 +1,29 @@
 <script>
 
 import BlogSection from '@/components/Blog/BlogSection.vue'
+import {useHead} from "@vueuse/head";
+import ServiceSection from "@/components/Services/ServiceSection.vue";
 
 
 export default {
   name: 'HomeView',
   components: {
+    ServiceSection,
     BlogSection
   },
-  data() {}
+  data() {
+
+  },
+
+  mounted() {
+
+    useHead({
+      "title" : this.$t("navbar.home"),
+      "titleTemplate": 'ONDEFOC | %s'
+    })
+
+  }
+
 }
 
 
@@ -39,9 +54,9 @@ export default {
       <div class="slider-content">
 
         <h4 class="sub-title">L’ONDEFOC</h4>
-        <h2 class="main-title">Organisme d’appui à la <span>formation continue.</span></h2>
-        <p>un établissement public à caractère industriel et commercial (EPIC) qui relève du Ministère de la Formation et de l’Enseignement Professionnels.</p>
-        <a class="btn btn-primary btn-hover-dark" href="#">Télécharger Catalogue</a>
+        <h2 class="main-title">{{$t("slider.main_title")}}</h2>
+        <p>{{$t("slider.description")}}</p>
+        <a class="btn btn-primary btn-hover-dark" href="#">{{$t("slider.btn")}}</a>
       </div>
       <!-- Slider Content End -->
 
@@ -71,7 +86,12 @@ export default {
 
 
 
+  <service-section/>
+
   <blog-section/>
+
+
+
 
 
 

@@ -18,14 +18,14 @@ export default {
 <template>
 
 
-  <banner title="Qui Sommes Nous."/>
+  <banner :title="$t('about.banner_title')"/>
 
   <!-- About Start -->
   <div class="section">
 
     <div class="section-padding-02 mt-n10">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-lg-6">
 
             <!-- About Images Start -->
@@ -43,16 +43,12 @@ export default {
 
             <!-- About Content Start -->
             <div class="about-content ">
-              <h5 class="sub-title">MOT DU DIRECTEUR GENERAL</h5>
-              <h2 class="main-title">DJOUDI SLIMANE</h2>
-              <p>L’ONDEFOC, est un établissement qui relève du secteur de la formation et de l’enseignement professionnels, reconnu pour la qualité de service qu’il rend à ses différents partenaires. Ses principaux atouts sont dans la qualité de ses prestations, l’étendue de son offre de formation et la densité des partenariats qu’il a tissés avec les différents acteurs économiques.</p>
-              <p>Grâce à son équipe pluridisciplinaire, l’ONDEFOC entend continuer à promouvoir une politique de formation fondée sur l’excellence, l’ouverture et l’accessibilité de ses formations à tous les travailleurs, où qu’ils se trouvent.</p>
-              <p>Ses programmes de formation répondent aux exigences de la transformation et de l’évolution des métiers et des compétences. En outre, ils sont adaptés pour mieux accompagner les entreprises dans leur stratégie de développement de leurs ressources humaines.</p>
-              <p>L’office est aussi un espace d’échanges et de rencontres à travers les manifestations qui y sont organisées régulièrement (conférences, expositions, séminaires, journées d’études …).</p>
-              <p>Dans un contexte budgétaire contraignant, le défi des prochaines années sera de gérer l’établissement avec efficacité et efficience tout en assurant à nos partenaires qui comptent sur nous le maintien de la qualité de ses services et de ses formations.</p>
-              <p>A travers ce site, je tiens ici à remercier chaleureusement toutes les équipes administratives, tous les enseignants consultants et les professionnels qui ne cessent de prendre à cœur la réussite des projets de l’office.</p>
+              <h5 class="sub-title">{{$t('about.about_content.sub_title')}}</h5>
+              <h2 class="main-title">{{$t('about.about_content.main_title')}}</h2>
+              <div v-html="$t('about.about_content.description')"></div>
             </div>
             <!-- About Content End -->
+
 
           </div>
         </div>
