@@ -15,9 +15,10 @@
     "contact": "Contactez Nous"
   },
   "slider": {
-    "main_title": "Organisme d’appui à la formation continue.",
+    "main_title": "Office National de Développement et <br> de Promotion de la Formation Continue",
     "description": "un établissement public à caractère industriel et commercial (EPIC) qui relève du Ministère de la Formation et de l’Enseignement Professionnels.",
-    "btn": "Télécharger Catalogue"
+    "btn": "Télécharger Catalogue",
+    "slogan": "Développer les Compétences. Promouvoir l’Excellence."
   },
   "about": {
     "banner_title": "Qui Sommes Nous.",

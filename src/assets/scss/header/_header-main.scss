@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgba($primary, 0.25);
+    //border: 1px solid rgba($secondary, 0.2);
     padding: 16px 15px;
     border-radius: 15px;
     margin-left: -15px;
@@ -57,9 +57,9 @@
 
             & a{
                 font-size: 18px;
-                font-weight: 500;
+                font-weight: 400;
                 text-transform: capitalize;
-                color: $dark;
+                color: $white;
                 transition: $transition-base;
                 display: block;
                 position: relative;
@@ -71,7 +71,7 @@
                 &::before{
                     position: absolute;
                     content: '';
-                    background-image: url(../../images/shape/shape-3.png);
+                    //background-image: url(../../images/shape/shape-3.png);
                     width: 70px;
                     height: 5px;
                     background-position: center center;
@@ -91,7 +91,7 @@
             }
             &.active{
                 & > a{
-                    color: $primary;
+                    color: $white;
 
                     &::before{
                         opacity: 1;

@@ -3,6 +3,34 @@
 /*----------------------------------------*/
 
 
+@font-face {
+  font-family: 'Bukra';
+  src: url('../fonts/29ltbukralight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bukra';
+  src: url('../fonts/29ltbukraregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bukra';
+  src: url('../fonts/29ltbukrabold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bukra';
+  src: url('../fonts/29ltbukrabolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 
 
@@ -35,7 +63,10 @@ div::-webkit-scrollbar-corner {
   background-color: indianred;
 }
 
-
+*::selection {
+  background-color: var($primary);
+  color: var($secondary);
+}
 
 
 @mixin placeholder {

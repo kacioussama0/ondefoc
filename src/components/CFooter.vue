@@ -24,7 +24,7 @@ export default  {
     <!-- Footer Widget Section Start -->
     <div class="footer-widget-section">
 
-      <img class="shape-1 animation-down" src="../assets/images/shape/shape-21.png" alt="Shape">
+      <img class="shape-1 animation-down opacity-25" src="../assets/images/shape/technology-pattern.svg" width="60" alt="Shape">
 
       <div class="container">
         <div class="row">
@@ -33,7 +33,7 @@ export default  {
             <!-- Footer Widget Start -->
             <div class="footer-widget">
               <div class="widget-logo">
-                <a href="#"><img src="https://ondefoc.dz/wp-content/uploads/2023/10/Capture_d_ecran_2023-10-18_003858-removebg-preview-1-768x188.png" width="160" alt="Logo"></a>
+                <a href="#"><img src="../assets/images/logo-white.svg" width="160" alt="Logo"></a>
               </div>
 
               <p class="my-5 text-light">{{$t("footer.description")}}</p>

@@ -35,15 +35,17 @@ export default  {
 
 <template>
   <!-- Header Main Start -->
-  <div class="header-main">
+  <div class="header-main mt-0">
     <div class="container">
 
       <!-- Header Main Start -->
-      <div class="header-main-wrapper">
+      <div class="header-main-wrapper ">
+
 
         <!-- Header Logo Start -->
         <div class="header-logo">
-          <a href="index.html"><img src="https://ondefoc.dz/wp-content/uploads/2023/10/LOGO-ONDEFOC-1-1.png.webp" width="160" alt="Logo"></a>
+<!--          <a href="index.html"><img src="https://ondefoc.dz/wp-content/uploads/2023/10/LOGO-ONDEFOC-1-1.png.webp" width="160" alt="Logo"></a>-->
+          <a href="index.html"><img src="../assets/images/logo-white.svg" width="160" alt="Logo"></a>
         </div>
         <!-- Header Logo End -->
 

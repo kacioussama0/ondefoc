@@ -7,10 +7,14 @@
     -----------------------------------*/
     $(window).on('scroll', function(event) {    
         var scroll = $(window).scrollTop();
+
         if (scroll <= 100) {
             $(".header-main").removeClass("sticky");
+          $(".header-menu .nav-menu li a").removeClass("text-primary")
+
         } else{
             $(".header-main").addClass("sticky");
+            $(".header-menu .nav-menu li a").addClass("text-primary")
         }
 	});
     
