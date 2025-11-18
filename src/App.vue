@@ -1,10 +1,6 @@
 <script >
-import { RouterLink, RouterView } from 'vue-router'
 import CHeader from '@/components/CHeader.vue'
 import CFooter from '@/components/CFooter.vue'
-import {useHead} from "@vueuse/head";
-
-
 
 
 

@@ -45,7 +45,7 @@ export default  {
         <!-- Header Logo Start -->
         <div class="header-logo">
 <!--          <a href="index.html"><img src="https://ondefoc.dz/wp-content/uploads/2023/10/LOGO-ONDEFOC-1-1.png.webp" width="160" alt="Logo"></a>-->
-          <a href="index.html"><img src="../assets/images/logo-white.svg" width="160" alt="Logo"></a>
+          <a href="index.html"><img src="../assets/images/logo-white.png" width="160" alt="Logo"></a>
         </div>
         <!-- Header Logo End -->
 

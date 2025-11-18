@@ -4,11 +4,13 @@ import BlogSection from '@/components/Blog/BlogSection.vue'
 import {useHead} from "@vueuse/head";
 import ServiceSection from "@/components/Services/ServiceSection.vue";
 import About from '@/components/About.vue'
+import Statistics from '@/components/Statistics.vue'
 
 
 export default {
   name: 'HomeView',
   components: {
+    Statistics,
     About,
     ServiceSection,
     BlogSection
@@ -56,7 +58,7 @@ export default {
         <h2 class="main-title" v-html="$t('slider.main_title')"></h2>
         <h4 class="sub-title mb-2">{{$t("slider.slogan")}}</h4>
 
-        <a class="btn btn-secondary w-25 mx-auto btn-hover-primary" href="#">{{$t("slider.btn")}}</a>
+        <a class="btn btn-secondary mx-auto btn-hover-primary" href="#">{{$t("slider.btn")}}</a>
       </div>
       <!-- Slider Content End -->
 
@@ -68,6 +70,8 @@ export default {
 
 
   <about/>
+
+  <statistics/>
 
   <service-section/>
 

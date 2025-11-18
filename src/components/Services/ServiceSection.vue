@@ -112,17 +112,4 @@ export default {
 <style >
 
 
-.services {
-  background-color: #2b1020;
-
-}
-
-.services .section-title .sub-title {
-  color: #FFFFFF !important;
-}
-
-.services .section-title .main-title {
-  color: #FFFFFF !important;
-}
-
 </style>

@@ -12,7 +12,7 @@
     border-radius: 15px;
     margin-left: -15px;
     margin-right: -15px;
-    margin-top: 30px;
+
     transition: $transition-base;
 
     @media #{$small-mobile}{
@@ -56,7 +56,7 @@
             }
 
             & a{
-                font-size: 18px;
+                padding-bottom: 5px;
                 font-weight: 400;
                 text-transform: capitalize;
                 color: $white;
@@ -86,7 +86,10 @@
             }
             &:hover{
                 & > a{
-                    color: $primary;
+                   color: $secondary;
+                   border-bottom: 1px solid $secondary;
+
+
                 }
             }
             &.active{
@@ -401,7 +404,7 @@
         & span{
             width: 23px;
             height: 2px;
-            background-color: $dark;
+            background-color: $light;
             display: block;
 
             &:nth-of-type(2){

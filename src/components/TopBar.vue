@@ -12,7 +12,7 @@ import IconRepublic from '@/components/icons/IconRepublic.vue'
         <div class="header-top-wrapper d-flex align-items-center">
 
           <!-- Header Top Left Start -->
-          <div class="header-top-left me-5">
+          <div class="header-top-left me-4">
             <icon-republic/>
           </div>
           <!-- Header Top Left End -->
@@ -42,8 +42,8 @@ import IconRepublic from '@/components/icons/IconRepublic.vue'
 }
 
 .header-top-left svg {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 </style>
