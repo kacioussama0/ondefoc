@@ -20,7 +20,7 @@ export default {
 <template>
 
   <!-- About Item Start -->
-  <div class="about-item">
+  <div class="about-item shadow-sm">
     <div class="item-image-overlay" :style="{'backgroundImage': 'url(\'' + imageUrl + '\')' }" ></div>
       <div class="item-title">
         <h3 class="title fw-bolder">{{title}}</h3>
@@ -83,7 +83,7 @@ export default {
 
 .item-title h3 {
   color: #FFFFFF;
-  font-size: 30px !important;
+  font-size: 25px !important;
   text-align: center;
 }
 

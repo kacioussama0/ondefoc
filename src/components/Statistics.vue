@@ -34,7 +34,7 @@ export default {
 
     <div class="container">
 
-      <div class="row">
+      <div class="row gy-5">
 
           <div class="col-md-4 text-center" v-for="item in statistics">
 
