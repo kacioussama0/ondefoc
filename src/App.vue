@@ -6,6 +6,9 @@ import CFooter from '@/components/CFooter.vue'
 
 export default  {
   components: {CHeader,CFooter},
+  mounted: function() {
+       AOS.init();
+  }
 
 }
 

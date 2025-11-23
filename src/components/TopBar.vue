@@ -37,13 +37,15 @@ import IconRepublic from '@/components/icons/IconRepublic.vue'
 <style scoped>
 .header-top-medal {
   color: var(--bs-light);
+
+  letter-spacing: 1px;
   font-size: 14px;
 
 }
 
 .header-top-left svg {
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
 }
 
 </style>

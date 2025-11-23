@@ -2,6 +2,7 @@ import {createApp, watch} from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/scss/style.scss'
+
 import i18n from './i18n'
 import AnimatedCounter from "vue-animated-counter"
 import {createHead} from "@vueuse/head";
