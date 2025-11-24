@@ -38,4 +38,16 @@ export default {
       return handleApiError(err);
     }
   },
+
+    async getServices() {
+        try {
+            const res = await api.get(routes.SERVICES.ALL);
+            return res.data;
+        } catch (err) {
+            return handleApiError(err);
+        }
+    },
+
+
+
 };

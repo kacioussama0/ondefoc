@@ -19,13 +19,13 @@ export default {
   },
   data() {
     return {
-      brands: {}
+
     }
   },
 
   async created() {
     
-    this.brands = await DataService.getBrands();
+
 
 
   },
@@ -88,7 +88,7 @@ export default {
   <service-section/>
 
 
-  <brand-section :brands="brands"/>
+  <brand-section/>
 
 <!--  <service-section/>-->
 

@@ -1,46 +1,53 @@
 <script>
 import SectionTitle from '../SectionTitle.vue';
+import DataService from '@/services/DataService.js'
 
 export default {
 
     name: 'Brand Section',
     components: {SectionTitle},
-
-    props: {
-        brands: {type:Object,required:true}
+    data() {
+      return {
+        brands: {}
+      }
     },
 
-    mounted() {
+    async mounted() {
 
-        const brandSwiper = new Swiper('.brand-swiper .swiper-container', {
+        this.brands = await DataService.getBrands();
+
+        window.addEventListener('load',function() {
+          const brandSwiper = new Swiper('.brand-swiper .swiper-container', {
             speed: 600,
             spaceBetween: 30,
-            autoplay: true,
             loop: true,
             breakpoints: {
-                0: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },  
-                576: {
-                    slidesPerView: 3,
-                },  
-                768: {
-                    slidesPerView: 4,
-                },            
-                992: {
-                    slidesPerView: 5,
-                    spaceBetween: 45,
-                },            
-                1200: {
-                    slidesPerView: 5,
-                    spaceBetween: 85,
-                }
+              0: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              576: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 4,
+              },
+              992: {
+                slidesPerView: 5,
+                spaceBetween: 45,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 85,
+              }
             },
             autoplay: {
-                delay: 500,
+              delay: 500,
             },
+          });
         });
+
+
     }
 
 }
@@ -63,7 +70,7 @@ export default {
 
                     <!-- Section Title Start -->
            
-                    <SectionTitle main-title="Best Supporter of Brand" />
+                    <SectionTitle main-title="Notre Partenaire" />
 
                     <!-- Section Title End -->
 

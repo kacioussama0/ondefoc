@@ -10,11 +10,16 @@
 
         if (scroll <= 100) {
             $(".header-main").removeClass("sticky");
-          $(".header-menu .nav-menu li a").removeClass("text-primary")
+            $(".header-menu .nav-menu li a").removeClass("text-dark")
+            $(".logo-dark").addClass('d-none');
+            $(".logo-white").removeClass('d-none');
+
 
         } else{
             $(".header-main").addClass("sticky");
-            $(".header-menu .nav-menu li a").addClass("text-primary")
+            $(".header-menu .nav-menu li a").addClass("text-dark")
+            $(".logo-white").addClass('d-none');
+            $(".logo-dark").removeClass('d-none');
         }
 	});
     

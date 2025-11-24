@@ -44,8 +44,11 @@ export default  {
 
         <!-- Header Logo Start -->
         <div class="header-logo">
-<!--          <a href="index.html"><img src="https://ondefoc.dz/wp-content/uploads/2023/10/LOGO-ONDEFOC-1-1.png.webp" width="160" alt="Logo"></a>-->
-          <a href="index.html"><img src="../assets/images/logo-white.png" width="160" alt="Logo"></a>
+          <router-link to="/">
+            <img src="../assets/images/logo-white.png" class="logo-white" height= "50" alt="Logo">
+            <img src="../assets/images/logo-dark.png" class="logo-dark d-none" height= "50"  alt="Logo">
+          </router-link>
+
         </div>
         <!-- Header Logo End -->
 
@@ -97,5 +100,8 @@ export default  {
 </template>
 
 <style scoped>
+.header-main {
+  backdrop-filter: blur(5px);
 
+}
 </style>

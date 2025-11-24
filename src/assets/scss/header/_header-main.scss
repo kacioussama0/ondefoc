@@ -2,14 +2,19 @@
 /*  3.2 - Header Main CSS
 /*----------------------------------------*/
 
-// Header Wrapper 
+// Header Wrapper
+
+.header-main {
+  border-bottom: 1px solid rgba($secondary, 0.2);
+
+}
+
 .header-main-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //border: 1px solid rgba($secondary, 0.2);
-    padding: 16px 15px;
-    border-radius: 15px;
+    padding: 10px 0;
+    //border-radius: 15px;
     margin-left: -15px;
     margin-right: -15px;
 
@@ -71,7 +76,7 @@
                 &::before{
                     position: absolute;
                     content: '';
-                    //background-image: url(../../images/shape/shape-3.png);
+                    background-image: url(../../images/shape/shape-3.png);
                     width: 70px;
                     height: 5px;
                     background-position: center center;
@@ -87,9 +92,6 @@
             &:hover{
                 & > a{
                    color: $secondary;
-                   border-bottom: 1px solid $secondary;
-
-
                 }
             }
             &.active{
